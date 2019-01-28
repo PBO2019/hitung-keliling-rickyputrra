@@ -1,25 +1,23 @@
-package com.Tugas;
 
 public class Lingkaran {
-    public static void main (String[]Args){
-        lingkaran L = new lingkaran();
-         L.LINGKARAN();
+    private int r;
+    private double phi;
+    private double keliling;
 
 
-
+    public void hitunglingkaran() {
+        this.keliling = 2 * phi;
     }
-    public static class lingkaran{
-        int r = 6;
-        double phi = 3.14;
 
-        public void LINGKARAN(){
-            System.out.println(2*phi*r);
+    public void setR(int r) {
+        this.r = r;
+    }
 
+    public void setPhi(double phi) {
+        this.phi = phi;
+    }
 
-
-        }
-
-
-
+    public double getKeliling() {
+        return keliling;
     }
 }
